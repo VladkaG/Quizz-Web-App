@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/94e8c4fe82.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="start-screen" class="start-screen">
+      <p>Take a quiz to see</p>
+      <h1>what do you know about</h1>
+      <h2>Ukraine</h2>
+      <button id="start-button" class="main-button">Start</button>
+    </div>
+    <div id="display-container" class="display-container hide">
+      <div class="header">
+        <div class="number-of-count">
+          <span class="number-of-question">1 of 3 questions</span>
+        </div>
+        <div class="timer-div">
+          <i class="fa-solid fa-hourglass fa-lg"></i>
+          <span class="time-left">20s</span>
+        </div>
+      </div>
+      <div class="container">
+        <h2 id="question" class="question">Questions</h2>
+        <div id="options" class="">
+          <button class="option">1</button>
+          <button class="option">2</button>
+          <button class="option">3</button>
+        </div>
+      </div>
+      <div class="btn-wrapper">
+			<button id="next-button" class="btn">Next</button>
+		</div>
+    </div>
+    <div class="score-container hide">
+      <div>Demo Score</div>
+      <button id="restart-button">Restart</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
