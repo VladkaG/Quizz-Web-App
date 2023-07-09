@@ -26,28 +26,33 @@
     <div id="display-container" class="display-container hide">
       <div class="header">
         <div class="number-of-count">
-          <span class="number-of-question">1 of 3 questions</span>
+          <span id="number-of-question"></span>
         </div>
         <div class="timer-div">
           <i class="fa-solid fa-hourglass fa-lg"></i>
-          <span class="time-left">20s</span>
+          <span id="time-left" class="time-left"></span>
         </div>
       </div>
       <div class="container">
         <h2 id="question" class="question">Questions</h2>
-        <div id="options" class="">
-          <button class="option">1</button>
-          <button class="option">2</button>
-          <button class="option">3</button>
+        <div id="image-container">
+          <img id="question-image" src="" alt="Question Image" />
+        </div>
+        <div id="options">
+          <button class="option hovered">1</button>
+          <button class="option hovered">2</button>
+          <button class="option hovered">3</button>
         </div>
       </div>
       <div class="btn-wrapper">
-			<button id="next-button" class="btn">Next</button>
-		</div>
+        <button id="next-button" class="btn">Next</button>
+      </div>
     </div>
-    <div class="score-container hide">
-      <div>Demo Score</div>
-      <button id="restart-button">Restart</button>
+    <div id="score-container" class="score-container hide">
+      <img src="/images/wheat.png" alt="grain" class="score-image" />
+      <div id="score"></div>
+      <div id="score-comment"></div>
+      <button id="restart-button" class="main-button">Restart</button>
     </div>
     <script src="script.js"></script>
   </body>
